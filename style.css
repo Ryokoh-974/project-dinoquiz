@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*                 Titre du jeu              */
+header>h1 {
+    border: solid 1px;
+    display: flex;
+    color: black;
+    margin: 1rem;
+    font-size: 30px;
+}
+
+/*                 Règle du jeu              */
+section>p {
+    border: solid 1px;
+    display: flex;
+    color: black;
+    margin: 1rem;
+}
+
+
+/*                dino qui bouge de gauche à droite              */
+section>div {
+    height: 50px;
+}
+
+.dino-img {
+    height: 60px;
+    animation: animate 2.5s linear infinite;
+}
+
+@keyframes animate {
+    -20% {
+        transform: translateX(calc(99% + 10px))
+    }
+
+    100% {
+        transform: translateX(calc(-99% + 999px))
+    }
+}
+
+/*                xxxxxxxxxxxxxxxxxxxxx              */
